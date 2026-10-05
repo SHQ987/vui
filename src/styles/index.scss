@@ -1,0 +1,44 @@
+:root {
+  --vui-primary: #409eff;
+  --vui-success: #67c23a;
+  --vui-warning: #e6a23c;
+  --vui-danger: #f56c6c;
+  --vui-info: #909399;
+  --vui-text: #303133;
+  --vui-text-light: #606266;
+  --vui-border: #dcdfe6;
+  --vui-bg: #ffffff;
+  --vui-bg-light: #f5f7fa;
+  --vui-radius: 4px;
+  --vui-mask: rgba(0, 0, 0, 0.45);
+}
+
+/* 过渡：Modal / Message */
+.vui-fade-enter-active,
+.vui-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.vui-fade-enter-from,
+.vui-fade-leave-to {
+  opacity: 0;
+}
+
+.vui-zoom-enter-active,
+.vui-zoom-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.vui-zoom-enter-from,
+.vui-zoom-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.vui-message-fade-enter-active,
+.vui-message-fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.vui-message-fade-enter-from,
+.vui-message-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-16px);
+}
